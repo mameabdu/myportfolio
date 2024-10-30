@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Common properties for header and footer */
+.blueBg {
+  background-color: #195774;
+  text-align: center;
+  color: white;
+}
+/* only header */
+.header {
+  padding-block: 2%;
+  font-size: 4vw;
+}
+/* The intire sections */
+.puppies {
+  margin: 5% 5% 7%;
+}
+.puppy-missing {
+  display: none;
+}
+.puppy-2,
+.puppy-4 {
+  margin-top: 5%;
+}
+
+.morepuppies {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* footer stayling */
+
+.footer {
+  padding-block: 4%;
+  font-size: 4vw;
+}
+
+/* Media query starts here */
+@media (min-width: 768px) {
+  .one div {
+    width: 32%;
+  }
+  .puppy-2,
+  .puppy-4 {
+    margin-top: 0;
+  }
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .puppy-missing {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    background-color: #EE4D65;
+  }
+  .morepuppies {
+    font-size: 4vw;
+  }
+  .two div {
+    width: 45%;
+  }
+}
